@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    
+}
+
+/* HEADER */
+
+.header__top{
+    display: flex;
+    width: 100%;
+    height: 100px; 
+    align-items: center;
+}
+
+.header__line{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.header__nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__profile{
+    width: 480px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header__intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 80px 100px;
+}
+
+.header__title{
+    font-size: 60px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.header__subtitle{
+    width: 70%;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.header__btn{
+    margin-top: 50px;
+    width: 150px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #02a056;
+    transition: background .2s, color .2s;
+}
+
+.header__btn:hover{
+    color: #02a056;
+    background-color: #73ac5f;
+}
+
+.header__clr{
+    color: #f9bb26;
+}
+
+/* NAV */
+
+.nav__item{
+    text-decoration: none;
+    color: #000;
+    font-family: "Be Vietnam Pro", sans-serif;
+    transition: color .2s;
+    position: relative;
+    font-size: 25px;
+}
+
+.nav__item:hover{
+    color: #02a056;
+}
+
+.nav__item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.8px;
+
+    background-color: #02a056;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .2s;
+
+    opacity: 0;
+}
+
+.nav__item:hover::after{
+   
+    opacity: 1;
+}
+
+.nav__col{
+    font-size: 25px;
+    color: #36ce6f;
+    margin-right: 10px;
+}
+
+
+/* PROFILE */
+
+.profile__navbar{   
+    display: flex;
+    align-items: center;
+}
+
+.profile__nav{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+}
+
+/* SECTION */
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section__title{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.section__block{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section__row{
+    display: flex;
+    margin: 0 auto 25px;
+    justify-content: space-evenly;
+}
+
+.section__row--num2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section__discount{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section__products{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section__video{
+    background-image: url(./assets/images/images/videob.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    padding: 40px;  
+    background-position: center;
+    text-align: center;
+}
+
+.section__wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.section--last{
+    padding: 10px;
+    text-align: center;
+    background-color: #fff9f3;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.section__title--last{
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* BOX */
+
+.block__box{
+    width: 22%;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+   
+}
+
+.box__img{
+    padding: 45px;
+    background-color: #f5f5f5;
+}
+
+.box__icon{
+    font-size: 70px;
+    color: #02ca6d;
+}
+
+.box__title{
+    font-weight: bold;  
+    margin: 20px 0;
+}
+
+.box__text{
+    margin-bottom: 40px;
+}
+
+.box__btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #02a056;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* СARD */
+
+.card__img{
+    width: 200px;
+    height: 200px;
+}
+
+.card__title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.card__text{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card__price{
+    font-size: 20px;
+    color: #02ca6d;
+}
+
+.card__block{
+    margin-right: 30px;
+}
+
+.card__btnclass{
+    margin-top: 60px;
+    text-align: center; 
+}
+
+.card__btn{
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: #02a056;
+    margin-bottom: 50px;
+}
+
+/* DISCOUNT */
+
+.discount__block{
+    text-align: left;
+    width: 650px;
+    height: 250px;
+    background-image: url(./assets/images/images/vegetables.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.discount__block--num2{
+    background-image: url(./assets/images/images/meat.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.discount__title{
+    font-size: 30px;
+}
+
+.discount__text{
+    font-size: 30px;
+    margin: 30px 0 45px;
+}
+
+.discount__btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #02a056;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+/* PRODUCTS*/
+
+.products__block{
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product__img{
+    width: 240px;
+    height: 240px;
+}
+
+.product__title{
+    font-size: 20px;
+}
+
+.product__price{
+    color: #02ca6d;
+    margin: 15px 0;
+}
+
+.product__btn{
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #02ca6d;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* VIDEO */
+
+.video__title{
+    color: #fff;
+    font-size: 40px;
+    margin: 60px;
+    font-weight: bold;
+}
+
+.video__img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 80px;
+}
+
+/* TREDING */
+
+.trending__block{
+    display: flex;
+    width: 400px;
+}
+
+.trending__img{
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.trending__title{
+    font-weight: bold;
+    margin: 35px 0 20px 0;
+}
+
+/* LAST */
+
+.front{
+    padding: 40px 0;
+    background-color: #fff;
+    width: 600px;
+    height: 280px;
+    bottom: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 43%);
+}
+
+.between{
+    position: relative;
+    background-color: white;
+    height: 300px;
+    width: 530px;
+    left: 485px;
+    bottom: 180px;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 43%);
+}
+
+.back{  
+    position: relative;
+    background-color: white;
+    height: 300px;
+    width: 460px;
+    left: 525px;
+    top: 155px;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 43%);
+}
+
+.text{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.left{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    content: "<";
+    padding: 5px 17px;
+    color: #fcb827;
+    font-size: 30px;
+    border-radius: 100%;
+    border: 1px solid #fcb827;
+    transition: color .2s, background .2s;
+}
+
+.left:hover{
+    color: #fff;
+    background-color: #fcb827;
+}
+
+.right{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    content: ">";
+    padding: 5px 17px;
+    color: #fcb827;
+    font-size: 30px;
+    border-radius: 100%;
+    border: 1px solid #fcb827;
+    transition: color .2s, background .2s;
+}
+
+.right:hover{
+    color: #fff;
+    background-color: #fcb827;
+}
+
+.face__block{
+    width: 300px; 
+    display: flex;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.face__text{
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.face__name{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
